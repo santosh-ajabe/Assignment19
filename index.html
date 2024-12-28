@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <style>
+        .body {
+            background-color: #ffffff;
+
+        }
+
+        .nursery_logo {
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .receipt_header {
+            border-bottom: 1px dashed gray;
+        }
+
+        .nursery_name {
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            border: 1px solid gray;
+            margin: 0 auto;
+            background-color: whitesmoke;
+
+
+        }
+
+        .nursery_address {
+            text-align: right;
+            padding-right: 5px;
+        }
+
+        .contact_no {
+            text-align: right;
+            padding: 2px;
+           
+        }
+
+        .receipt_title {
+            text-align: center;
+            font-size: 22px;
+            margin-left: auto;
+
+        }
+
+        .receipt_body {
+            position: relative;
+            margin-right: 0%;
+
+        }
+
+        .receipt_detailed {
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+
+        }
+
+        .receipt_detailed_key {
+            color: gray;
+            width: 30%;
+        }
+
+        .receipt_detailed_value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+        }
+
+        .Accountatnt_sign {
+            text-align: right;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .signature_border {
+            border-top: 1px dashed gray;
+            margin-top: 10px;
+        }
+
+        .stamp {
+            width: 90px;
+            position: absolute;
+            right: 10%;
+            bottom: 6%;
+            transform: translateY(50%) rotate(-30deg);
+            padding: 4%;
+
+
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 1px;
+            font-weight: bold;
+            font-size: 18px;
+            color: gray;
+            height: 40px;
+            background-color: #ccffcc;
+            text-transform: calc(20px);
+            padding-top: 10px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="receipt_header">
+            <img src="logo.jpg" class="nursery_logo">
+            <h2 class="nursery_name">Hindavi Nursery</h2>
+            <p class="nursery_address">
+                Ap_khedshivapur ,<br>
+                Tal_khed Dist_pune<br>
+                pin_414255
+            </p>
+            <p class="contact_no"> Mob:+919075883287</p>
+        </div>
+        <div class="receipt_body">
+            <h3 class="receipt_title">Payment Receipt</h3><br>
+        </div>
+        <div class="receipt_detailed">
+            <div class="receipt_detailed_key">Receipt no:</div>
+            <div class="receipt_detailed_value">12456789</div>
+        </div>
+        <div class="receipt_detailed">
+            <div class="receipt_detailed_key">Payment Date:</div>
+            <div class="receipt_detailed_value">12/12/24</div>
+        </div>
+        <div class="receipt_detailed">
+            <div class="receipt_detailed_key">Amount:</div>
+            <div class="receipt_detailed_value">50000</div>
+        </div>
+        <div class="receipt_detailed">
+            <div class="receipt_detailed_key">Payment Mode:</div>
+            <div class="receipt_detailed_value">Cash</div>
+        </div>
+        <p class="Accountatnt_sign">Accountant_signature</p>
+        <div class="signature_border"></div>
+        <img src="stamp.png" class="stamp">
+        <div class="footer">Thank you for your payment!</div>
+    </div>
+</body>
+
+</html>
